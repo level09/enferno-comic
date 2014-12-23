@@ -436,3 +436,25 @@ footer {
 
   text-align: center;
 }
+
+
+.cd-container {
+  max-width: 1100px;
+  text-align: center;
+}
+ul.navigation {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+ul.navigation li {
+  display: inline-block;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+ul.navigation li a {
+  color: #222;
+  font-size: 24px;
+
+}

@@ -16,7 +16,8 @@ from extensions import (
 )
 from public.views import bp_public
 from user.views import bp_user
-
+from public.models import Comic
+from admin.views import ComicView
 
 def create_app(config_object=ProdConfig):
     app = Flask(__name__)
@@ -49,6 +50,7 @@ def register_blueprints(app):
 def register_admin_views(admin):
     admin.add_view(UserView(User))
     admin.add_view(RoleView(Role))
+    admin.add_view(ComicView(Comic))
     return None
 
 
